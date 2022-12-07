@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var page: String = "Profile"
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack() {
+            HeaderView(page: $page)
+            
+            DashboardView()
+            
+            FooterView(page: $page)
         }
-        .padding()
+        .background(Color.bgBlack)
+        
     }
 }
 
