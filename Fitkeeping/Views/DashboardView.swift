@@ -107,13 +107,14 @@ struct DashboardView: View {
             
             // Physical score x Mental score graph
             
-        }.padding()
+        }
+        .padding()
+        .background(Color.bgBlack)
     }
 }
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         DashboardView()
-            .background(Color.bgBlack)
     }
 }
