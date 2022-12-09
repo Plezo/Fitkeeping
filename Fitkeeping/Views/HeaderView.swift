@@ -18,14 +18,6 @@ struct HeaderView: View {
                 .foregroundColor(Color.whiteText)
             
             Spacer()
-            
-//            Button(action: {
-//                
-//            }) {
-//                Image(systemName: "magnifyingglass.circle.fill")
-//                    .accentColor(Color.maroon)
-//                    .font(.system(size: 40))
-//            }
         }
         .padding()
     }

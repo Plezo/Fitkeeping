@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12724D6629429F0C004B3E5F /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D6529429F0C004B3E5F /* Day.swift */; };
+		12724D682942FFAD004B3E5F /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D672942FFAD004B3E5F /* Week.swift */; };
+		12724D6A2943066D004B3E5F /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D692943066D004B3E5F /* Objects.swift */; };
+		12724D6C2943076B004B3E5F /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D6B2943076B004B3E5F /* Chart.swift */; };
+		12724D6E29430997004B3E5F /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D6D29430997004B3E5F /* Tabs.swift */; };
+		12724D70294309D3004B3E5F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D6F294309D3004B3E5F /* ProfileView.swift */; };
 		129757A229401C8A00E38BC5 /* FitkeepingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129757A129401C8A00E38BC5 /* FitkeepingApp.swift */; };
 		129757A429401C8A00E38BC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129757A329401C8A00E38BC5 /* ContentView.swift */; };
 		129757A629401C8B00E38BC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129757A529401C8B00E38BC5 /* Assets.xcassets */; };
@@ -17,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12724D6529429F0C004B3E5F /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		12724D672942FFAD004B3E5F /* Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
+		12724D692943066D004B3E5F /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
+		12724D6B2943076B004B3E5F /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; usesTabs = 0; };
+		12724D6D29430997004B3E5F /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		12724D6F294309D3004B3E5F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1297579E29401C8A00E38BC5 /* Fitkeeping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitkeeping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129757A129401C8A00E38BC5 /* FitkeepingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitkeepingApp.swift; sourceTree = "<group>"; };
 		129757A329401C8A00E38BC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +50,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12724D6429429EFB004B3E5F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				12724D6529429F0C004B3E5F /* Day.swift */,
+				12724D672942FFAD004B3E5F /* Week.swift */,
+				12724D6B2943076B004B3E5F /* Chart.swift */,
+				12724D6D29430997004B3E5F /* Tabs.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		1297579529401C8A00E38BC5 = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +80,7 @@
 		129757A029401C8A00E38BC5 /* Fitkeeping */ = {
 			isa = PBXGroup;
 			children = (
-				129757B229401E4C00E38BC5 /* Helpers */,
+				129757B229401E4C00E38BC5 /* Utils */,
 				129757AF29401CDD00E38BC5 /* Views */,
 				129757A129401C8A00E38BC5 /* FitkeepingApp.swift */,
 				129757A529401C8B00E38BC5 /* Assets.xcassets */,
@@ -77,19 +100,22 @@
 		129757AF29401CDD00E38BC5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				12724D6429429EFB004B3E5F /* Components */,
 				129757A329401C8A00E38BC5 /* ContentView.swift */,
 				129757B029401CEF00E38BC5 /* HeaderView.swift */,
 				129757BB29402D5200E38BC5 /* DashboardView.swift */,
+				12724D6F294309D3004B3E5F /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		129757B229401E4C00E38BC5 /* Helpers */ = {
+		129757B229401E4C00E38BC5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				129757B329401E5B00E38BC5 /* Extensions.swift */,
+				12724D692943066D004B3E5F /* Objects.swift */,
 			);
-			path = Helpers;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +190,13 @@
 			files = (
 				129757BC29402D5200E38BC5 /* DashboardView.swift in Sources */,
 				129757A429401C8A00E38BC5 /* ContentView.swift in Sources */,
+				12724D6A2943066D004B3E5F /* Objects.swift in Sources */,
+				12724D6E29430997004B3E5F /* Tabs.swift in Sources */,
+				12724D682942FFAD004B3E5F /* Week.swift in Sources */,
+				12724D6629429F0C004B3E5F /* Day.swift in Sources */,
+				12724D6C2943076B004B3E5F /* Chart.swift in Sources */,
 				129757B129401CEF00E38BC5 /* HeaderView.swift in Sources */,
+				12724D70294309D3004B3E5F /* ProfileView.swift in Sources */,
 				129757A229401C8A00E38BC5 /* FitkeepingApp.swift in Sources */,
 				129757B429401E5B00E38BC5 /* Extensions.swift in Sources */,
 			);
@@ -223,6 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -277,6 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -297,11 +331,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Fitkeeping/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,11 +359,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Fitkeeping/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

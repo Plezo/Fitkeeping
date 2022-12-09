@@ -10,33 +10,11 @@ import SwiftUI
 struct ContentView: View {
     @State private var page: String = "Dashboard"
     
-    init() {
-        UITabBar.appearance().barTintColor = UIColor.white
-        UITabBar.appearance().unselectedItemTintColor = UIColor(named: "TabBarUnselected")
-      }
-    
     var body: some View {
         VStack() {
-            HeaderView(page: $page)
+            HeaderView(page: $page) // TODO: Think theres a better way of doing a header
             
-            TabView(selection: $page) {
-                
-                DashboardView()
-                    .tabItem {
-                        Image(systemName: "dumbbell")
-                        Text("Dashboard")
-                    }
-                    .tag("Dashboard")
-                
-                DashboardView()
-                    .tabItem {
-                        Image(systemName: "person.crop.circle.dashed")
-                        Text("Profile")
-                    }
-                    .tag("Profile")
-                
-            }
-            .tint(Color.maroon)
+            Tabs(page: $page)
         }
         .background(Color.bgBlack)
     }
