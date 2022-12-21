@@ -7,34 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		124FC4CF2953D3F8009366D9 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124FC4CE2953D3F8009366D9 /* Tabs.swift */; };
 		12724D6629429F0C004B3E5F /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D6529429F0C004B3E5F /* Day.swift */; };
 		12724D682942FFAD004B3E5F /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D672942FFAD004B3E5F /* Week.swift */; };
 		12724D6A2943066D004B3E5F /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D692943066D004B3E5F /* Objects.swift */; };
 		12724D6C2943076B004B3E5F /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D6B2943076B004B3E5F /* Chart.swift */; };
-		12724D6E29430997004B3E5F /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D6D29430997004B3E5F /* Tabs.swift */; };
 		12724D70294309D3004B3E5F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D6F294309D3004B3E5F /* ProfileView.swift */; };
 		129757A229401C8A00E38BC5 /* FitkeepingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129757A129401C8A00E38BC5 /* FitkeepingApp.swift */; };
 		129757A429401C8A00E38BC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129757A329401C8A00E38BC5 /* ContentView.swift */; };
 		129757A629401C8B00E38BC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129757A529401C8B00E38BC5 /* Assets.xcassets */; };
 		129757A929401C8B00E38BC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129757A829401C8B00E38BC5 /* Preview Assets.xcassets */; };
-		129757B129401CEF00E38BC5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129757B029401CEF00E38BC5 /* HeaderView.swift */; };
+		129757B129401CEF00E38BC5 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129757B029401CEF00E38BC5 /* Header.swift */; };
 		129757B429401E5B00E38BC5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129757B329401E5B00E38BC5 /* Extensions.swift */; };
 		129757BC29402D5200E38BC5 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129757BB29402D5200E38BC5 /* DashboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		124FC4CE2953D3F8009366D9 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		12724D6529429F0C004B3E5F /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		12724D672942FFAD004B3E5F /* Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
 		12724D692943066D004B3E5F /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
 		12724D6B2943076B004B3E5F /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; usesTabs = 0; };
-		12724D6D29430997004B3E5F /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		12724D6F294309D3004B3E5F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1297579E29401C8A00E38BC5 /* Fitkeeping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitkeeping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129757A129401C8A00E38BC5 /* FitkeepingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitkeepingApp.swift; sourceTree = "<group>"; };
 		129757A329401C8A00E38BC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		129757A529401C8B00E38BC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		129757A829401C8B00E38BC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		129757B029401CEF00E38BC5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		129757B029401CEF00E38BC5 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		129757B329401E5B00E38BC5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		129757BB29402D5200E38BC5 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; usesTabs = 0; };
 /* End PBXFileReference section */
@@ -53,10 +53,11 @@
 		12724D6429429EFB004B3E5F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				129757B029401CEF00E38BC5 /* Header.swift */,
 				12724D6529429F0C004B3E5F /* Day.swift */,
 				12724D672942FFAD004B3E5F /* Week.swift */,
 				12724D6B2943076B004B3E5F /* Chart.swift */,
-				12724D6D29430997004B3E5F /* Tabs.swift */,
+				124FC4CE2953D3F8009366D9 /* Tabs.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -80,6 +81,7 @@
 		129757A029401C8A00E38BC5 /* Fitkeeping */ = {
 			isa = PBXGroup;
 			children = (
+				12724D6429429EFB004B3E5F /* Components */,
 				129757B229401E4C00E38BC5 /* Utils */,
 				129757AF29401CDD00E38BC5 /* Views */,
 				129757A129401C8A00E38BC5 /* FitkeepingApp.swift */,
@@ -100,9 +102,7 @@
 		129757AF29401CDD00E38BC5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				12724D6429429EFB004B3E5F /* Components */,
 				129757A329401C8A00E38BC5 /* ContentView.swift */,
-				129757B029401CEF00E38BC5 /* HeaderView.swift */,
 				129757BB29402D5200E38BC5 /* DashboardView.swift */,
 				12724D6F294309D3004B3E5F /* ProfileView.swift */,
 			);
@@ -191,11 +191,11 @@
 				129757BC29402D5200E38BC5 /* DashboardView.swift in Sources */,
 				129757A429401C8A00E38BC5 /* ContentView.swift in Sources */,
 				12724D6A2943066D004B3E5F /* Objects.swift in Sources */,
-				12724D6E29430997004B3E5F /* Tabs.swift in Sources */,
 				12724D682942FFAD004B3E5F /* Week.swift in Sources */,
+				124FC4CF2953D3F8009366D9 /* Tabs.swift in Sources */,
 				12724D6629429F0C004B3E5F /* Day.swift in Sources */,
 				12724D6C2943076B004B3E5F /* Chart.swift in Sources */,
-				129757B129401CEF00E38BC5 /* HeaderView.swift in Sources */,
+				129757B129401CEF00E38BC5 /* Header.swift in Sources */,
 				12724D70294309D3004B3E5F /* ProfileView.swift in Sources */,
 				129757A229401C8A00E38BC5 /* FitkeepingApp.swift in Sources */,
 				129757B429401E5B00E38BC5 /* Extensions.swift in Sources */,

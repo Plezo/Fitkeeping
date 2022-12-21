@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack() {
-            HeaderView(page: $page) // TODO: Think theres a better way of doing a header
+            Header(page: $page) // TODO: Think theres a better way of doing a header
             
             Tabs(page: $page)
         }
