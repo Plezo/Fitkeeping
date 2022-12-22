@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		124FC4CF2953D3F8009366D9 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124FC4CE2953D3F8009366D9 /* Tabs.swift */; };
+		124FC4D12953D8F9009366D9 /* DaySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124FC4D02953D8F9009366D9 /* DaySheetView.swift */; };
 		12724D6629429F0C004B3E5F /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D6529429F0C004B3E5F /* Day.swift */; };
 		12724D682942FFAD004B3E5F /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D672942FFAD004B3E5F /* Week.swift */; };
 		12724D6A2943066D004B3E5F /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12724D692943066D004B3E5F /* Objects.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		124FC4CE2953D3F8009366D9 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		124FC4D02953D8F9009366D9 /* DaySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySheetView.swift; sourceTree = "<group>"; };
 		12724D6529429F0C004B3E5F /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		12724D672942FFAD004B3E5F /* Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
 		12724D692943066D004B3E5F /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				129757A329401C8A00E38BC5 /* ContentView.swift */,
 				129757BB29402D5200E38BC5 /* DashboardView.swift */,
 				12724D6F294309D3004B3E5F /* ProfileView.swift */,
+				124FC4D02953D8F9009366D9 /* DaySheetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				12724D70294309D3004B3E5F /* ProfileView.swift in Sources */,
 				129757A229401C8A00E38BC5 /* FitkeepingApp.swift in Sources */,
 				129757B429401E5B00E38BC5 /* Extensions.swift in Sources */,
+				124FC4D12953D8F9009366D9 /* DaySheetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

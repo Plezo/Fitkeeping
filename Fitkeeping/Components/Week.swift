@@ -24,7 +24,9 @@ struct Week: View {
                     .font(.footnote)
                     .foregroundColor(.whiteText)
             }
+            
             Spacer()
+            
             Text(dummyWeek.program)
                 .bold()
                 .font(.title2)
@@ -42,10 +44,14 @@ struct Week: View {
             
             HStack {
                 Text("<")
+                
                 Spacer()
+                
                 Text("Finish Week")
                     .bold()
+                
                 Spacer()
+                
                 Text(">")
             }
             .foregroundColor(.whiteText)
