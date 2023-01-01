@@ -51,7 +51,7 @@ struct Day: View {
             }
         }
         .sheet(isPresented: $showDaySheet) {
-            DaySheetView(showDaySheet: self.$showDaySheet)
+            DaySheetView(showDaySheet: self.$showDaySheet, day: self.day)
         }
     }
 }

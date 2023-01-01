@@ -6,17 +6,20 @@
 //
 
 // TODO: Fill out Exercise
-struct ExerciseObj: Hashable {
-
+struct ExerciseObj: Hashable, Equatable {
+    var id: Int
+    var name: String
+    var expected: [[Int]] // inside arr is (expected reps, expected RPE) (# sets is length of array)
+    var performed: [[Int]] // not performed sets will be -1, -1
 }
 
 struct DayObj: Hashable {
     var day: Int
     var finished: Bool = false
+//    var exercises: [ExerciseObj]
     var date: String? // TODO: Turn into date
     var weightLifted: Int?
     var duration: String? // Timestamp? TODO: Figure out what dtype
-//    var exercises: [ExerciseObj]
 }
 
 struct WeekObj: Hashable {

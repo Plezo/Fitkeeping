@@ -15,11 +15,11 @@ struct Week: View {
         // Week info
         HStack {
             VStack {
-                Text("Week \(dummyWeek.week)")
+                Text("Week \(week.week)")
                     .bold()
                     .font(.title)
                     .foregroundColor(.maroon)
-                Text(dummyWeek.firstDay)
+                Text(week.firstDay)
                     .bold()
                     .font(.footnote)
                     .foregroundColor(.whiteText)
@@ -27,7 +27,7 @@ struct Week: View {
             
             Spacer()
             
-            Text(dummyWeek.program)
+            Text(week.program)
                 .bold()
                 .font(.title2)
                 .foregroundColor(.whiteText)
@@ -37,7 +37,7 @@ struct Week: View {
         
         // Days
         VStack {
-            ForEach(dummyWeek.days, id: \.day) {day in
+            ForEach(week.days, id: \.day) {day in
                 Day(day: day)
                 Divider().frame(width:0, height:10)
             }
