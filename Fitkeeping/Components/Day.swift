@@ -10,15 +10,11 @@ import SwiftUI
 // TODO: Use sheets for popup on exercises screen
 
 struct Day: View {
-    @State private var showDaySheet = false
-    
     let day: DayObj
     
     var body: some View {
         
-        Button(action: {
-            self.showDaySheet = true
-        }) {
+        NavigationLink(destination: SpecificDay(day: self.day)) {
             if day.finished {
                 HStack {
                     Text("Day \(day.day)")
@@ -49,9 +45,6 @@ struct Day: View {
                 }
                 .foregroundColor(.whiteText)
             }
-        }
-        .sheet(isPresented: $showDaySheet) {
-            DaySheetView(showDaySheet: self.$showDaySheet, day: self.day)
         }
     }
 }

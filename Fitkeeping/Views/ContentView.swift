@@ -11,12 +11,15 @@ struct ContentView: View {
     @State private var page: String = "Dashboard"
     
     var body: some View {
-        VStack() {
-            Header(page: $page) // TODO: Think theres a better way of doing a header
-            
-            Tabs(page: $page)
+        NavigationStack {
+            VStack() {
+                Header(page: $page) // TODO: Think theres a better way of doing a header
+                
+                Tabs(page: $page)
+            }
+            .background(Color.bgBlack)
         }
-        .background(Color.bgBlack)
+        .tint(Color.whiteText)
     }
 }
 

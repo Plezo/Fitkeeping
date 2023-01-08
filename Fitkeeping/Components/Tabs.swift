@@ -25,6 +25,6 @@ struct Tabs: View {
                     Text("Profile")
                 }
                 .tag("Profile")
-        }
+        }.tint(Color.whiteText)
     }
 }
