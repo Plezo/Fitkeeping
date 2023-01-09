@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Week: View {
     
-    let week: WeekObj
+    @State var week: WeekObj
     
     var body: some View {
         // Week info

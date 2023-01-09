@@ -10,7 +10,7 @@ struct ExerciseObj: Hashable {
     var id: Int
     var name: String
     var numSets: Int
-    var expected: [[Int]] // inside arr is (expected weight, expected reps, expected RPE) (# sets == length of array)
+    var expected: [[Int]] // inside arr is (expected weight, expected reps, expected RPE, completed) (# sets == length of array)
     var performed: [[Int]] // not performed sets will be -1, -1
 }
 

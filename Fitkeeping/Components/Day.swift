@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-// TODO: Use sheets for popup on exercises screen
-
 struct Day: View {
     let day: DayObj
     

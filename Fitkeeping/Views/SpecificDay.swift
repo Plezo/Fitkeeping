@@ -11,27 +11,27 @@ import SwiftUI
 
 var dummyExercise = ExerciseObj(
     id: 0, name: "Good Mornings", numSets: 3,
-    expected: [[135, 8, 8], [135, 8, 8], [135, 8, 8]],
-    performed: [[135, 6, 8], [-1, -1, -1], [-1, -1, -1]]
+    expected: [[135, 8, 8, 1], [135, 8, 8, 1], [135, 8, 8, 1]],
+    performed: [[135, 6, 8, 1], [-1, -1, -1, 0], [-1, -1, -1, 0]]
 )
 
 var dummyExercise2 = ExerciseObj(
     id: 1, name: "Squats", numSets: 3,
-    expected: [[225, 8, 8], [225, 8, 8], [225, 8, 8]],
-    performed: [[225, 8, 8], [225, 8, 8], [-1, -1, -1]]
+    expected: [[225, 8, 8, 1], [225, 8, 8, 1], [225, 8, 8, 1]],
+    performed: [[225, 8, 8, 1], [225, 8, 8, 1], [-1, -1, -1, 0]]
 )
 
 var dummyExercise3 = ExerciseObj(
     id: 2, name: "Benchpress", numSets: 3,
-    expected: [[185, 8, 8], [185, 8, 8], [185, 8, 8]],
-    performed: [[185, 8, 8], [185, 8, 8], [-1, -1, -1]]
+    expected: [[185, 8, 8, 1], [185, 8, 8, 1], [185, 8, 8, 1]],
+    performed: [[185, 8, 8, 1], [185, 8, 8, 1], [-1, -1, -1, 0]]
 )
 
 var exercises: [ExerciseObj] = [dummyExercise, dummyExercise2, dummyExercise3]
 
 struct SpecificDay: View {
     @State var showEditSheet: Bool = false
-    let day: DayObj
+    @State var day: DayObj
     
     var body: some View {
         VStack(spacing: 20) {
@@ -94,8 +94,9 @@ struct ExerciseCard: View {
                     .padding()
                     .foregroundColor(Color.whiteText)
                 HStack {
-                    ForEach(0..<exercise.numSets) {i in
-                        if exercise.performed[i][0] != -1 {
+                    // Not sure if this id is the right approach
+                    ForEach(0..<exercise.expected.count, id: \.self) {i in
+                        if exercise.performed[i][3] == 1 {
                             VStack {
                                 Text("\(exercise.performed[i][0])lb")
                                 Text("\(exercise.performed[i][1]) reps")
@@ -116,7 +117,7 @@ struct ExerciseCard: View {
                 }
             }
         }.sheet(isPresented: $showEditSheet) {
-            EditExerciseSheet(showEditSheet: $showEditSheet, exercise: exercise)
+            EditExerciseSheet(showEditSheet: $showEditSheet, exercise: $exercise)
         }
     }
 }
